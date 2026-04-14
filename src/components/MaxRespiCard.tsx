@@ -51,7 +51,7 @@ export function MaxRespiCard({ today, onComplete }: Props) {
         <div className="text-center py-3">
           <p className="text-4xl font-mono font-bold text-foreground">{formatTime(elapsed)}</p>
           {thirtyMarker > 0 && (
-            <p className="text-sm text-muted-foreground mt-1">{thirtyMarker × 30}s passées</p>
+            <p className="text-sm text-muted-foreground mt-1">{thirtyMarker * 30}s passées</p>
           )}
           <Button onClick={stop} variant="destructive" className="w-full mt-3" size="sm">
             Stop
